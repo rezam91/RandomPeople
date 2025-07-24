@@ -15,8 +15,8 @@ const Home = () => {
                 </ol>
             )}
             <div className="ml-auto mr-auto w-2/3 mt-[20px] flex gap-[20px] justify-center">
-                <button className="bg-blue-500 text-lg text-[#FFFFFF] pl-[10px] pr-[10px] pt-[20px] pb-[20px] rounded-[10px] flex-1 hover:bg-blue-600 hover:cursor-pointer" onClick={() => navigate('select')}>Add People To List!</button>
-                <button disabled={list.length<2 ? true : false} className={`bg-blue-500 text-lg text-[#FFFFFF] pl-[10px] pr-[10px] pt-[20px] pb-[20px] rounded-[10px] flex-1 hover:bg-blue-600 ${list.length<2 ? "hover: cursor-not-allowed" :"hover: cursor-pointer"}`} onClick={() => navigate('random')}>Select Randomly</button>
+                <button className="bg-blue-500 text-lg text-[#FFFFFF] pl-[10px] pr-[10px] pt-[20px] pb-[20px] rounded-[10px] flex-1 hover:bg-blue-600 hover:cursor-pointer transition duration-200" onClick={() => navigate('select')}>Add People To List!</button>
+                <button disabled={list.length<2 ? true : false} className={`bg-blue-500 text-lg text-[#FFFFFF] pl-[10px] pr-[10px] pt-[20px] pb-[20px] rounded-[10px] flex-1 hover:bg-blue-600 ${list.length<2 ? "hover: cursor-not-allowed" :"hover: cursor-pointer"} transition duration-200`} onClick={() => navigate('random')}>Select Randomly</button>
             </div>
         </>
     )
