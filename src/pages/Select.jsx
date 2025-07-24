@@ -7,9 +7,6 @@ import { UserContext } from "../context/userContext"
 
 const Select = () => {
     const { list, dispatch } = useContext(UserContext)
-    useEffect(() => {
-        console.log(list)
-    },[list])
     const schema = yup.object({
         firstName: yup.string().required().min(3),
         lastName: yup.string().required().min(3)

@@ -10,11 +10,15 @@ const Home = () => {
             {!list.length ? <div>No-one Added Yet !</div> : (
                 <ol>
                     {list.map((item, index) => (
-                        <li key={index}>{item.fName} {item.lName}</li>
+                        <li key={index}>{item.fName+ " "},{item.lName}</li>
                     ))}
                 </ol>
             )}
-            <button onClick={() => navigate('select')}>Add People To List!</button>
+            <div>
+
+                <button onClick={() => navigate('select')}>Add People To List!</button>
+                <button onClick={() => navigate('random')}>Select Randomly</button>
+            </div>
         </>
     )
 }
