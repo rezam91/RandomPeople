@@ -11,7 +11,7 @@ import { useReducer } from "react"
 const App = () => {
   const [list, dispatch] = useReducer(listUpdater, [])
   return (
-    <>
+    <div className="text-[#111827] pb-[20px] ml-auto mr-auto bg-gray-200 rounded-[20px] w-[600px]">
       <UserContext.Provider value = {{list, dispatch}}>
         <Header />
         <Routes>
@@ -21,7 +21,7 @@ const App = () => {
           <Route path='/*' element={<NotFound />} />
         </Routes>
       </UserContext.Provider>
-    </>
+    </div>
   )
 }
 
